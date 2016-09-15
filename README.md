@@ -7,8 +7,11 @@ Camunda Artifacts: https://app.camunda.com/nexus/content/groups/public/org/camun
 
 Installation:
 1. Edit /src/main/resources/activitystreams.properties to match your setup
+
 2. Build using Maven
+
 3. Add jar to Camunda engine classpath
+
 4. Activate in Camunda's main configuration (differs depending on deployment):
 
 camunda.cfg.xml:
