@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.camunda.bpm.model:camunda-xml-model
+    versions:
+    - 7.14.0
+  - dependency-name: org.camunda.bpm.model:camunda-bpmn-model
+    versions:
+    - 7.14.0
+  - dependency-name: org.camunda.bpm:camunda-engine
+    versions:
+    - 7.14.0
+  - dependency-name: org.camunda.bpm.model:camunda-cmmn-model
+    versions:
+    - 7.14.0
